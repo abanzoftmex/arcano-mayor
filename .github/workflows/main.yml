@@ -14,13 +14,13 @@ jobs:
       - name: 📥 Checkout code
         uses: actions/checkout@v4
 
-      - name: 🚀 Deploy via SFTP
+      - name: 🚀 Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 195.35.33.109
-          username: u947001429.gaboprueba
+          username: u947001429.ghostwhite-grasshopper-180465.hostingersite.com
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
+          protocol: ftp
           port: 21
           local-dir: ./
           server-dir: public_html/wp-content/themes/astra-child/
