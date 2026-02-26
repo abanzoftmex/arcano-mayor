@@ -1,5 +1,306 @@
 /*
-Theme Name: Astra Child
-Template:   astra
-Version: 1.0
+Theme Name: Arcano Astral
+Theme URI: https://example.com/arcano-astral
+Author: Arcano Team
+Author URI: https://example.com
+Description: Cosmic eCommerce homepage theme for tarot services and astral products.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 7.4
+Text Domain: arcano-astral
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap");
+
+:root {
+  --bg: #090312;
+  --bg-soft: #130623;
+  --card: rgba(24, 10, 42, 0.78);
+  --text: #f8f1ff;
+  --muted: #c9b6df;
+  --accent: #7de6f8;
+  --accent-2: #ffaee0;
+  --highlight: #ffe194;
+  --border: rgba(170, 132, 224, 0.35);
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.38);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(153, 97, 211, 0.35), transparent 36%),
+    radial-gradient(circle at 80% 0%, rgba(117, 211, 232, 0.22), transparent 40%),
+    linear-gradient(150deg, #06010d, #140523 45%, #090312 100%);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.arcano-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  background: rgba(9, 3, 18, 0.82);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 0;
+}
+
+.brand-mark {
+  font-family: "Syne", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.brand-mark span {
+  color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  gap: 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.shop-pill {
+  padding: 9px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  color: #120720;
+}
+
+.hero {
+  padding: 86px 0 56px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--highlight);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.hero h1 {
+  margin: 8px 0 14px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.2rem, 6vw, 4.6rem);
+  line-height: 0.95;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 58ch;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.button-primary {
+  color: #11061e;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+}
+
+.button-secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.hero-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  min-height: 520px;
+}
+
+.hero-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-card__note {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  right: 18px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(8, 2, 16, 0.74);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.section {
+  padding: 36px 0;
+}
+
+.section-title {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(1.3rem, 4vw, 2.1rem);
+  margin: 0 0 8px;
+}
+
+.section-copy {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.service-card {
+  padding: 20px;
+}
+
+.service-card h3 {
+  margin: 4px 0 6px;
+  font-family: "Syne", sans-serif;
+}
+
+.service-card p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.product-card img {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card__content {
+  padding: 14px;
+}
+
+.product-card h4 {
+  margin: 0;
+  font-family: "Syne", sans-serif;
+}
+
+.price {
+  color: var(--highlight);
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.highlight {
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid rgba(125, 230, 248, 0.45);
+  background:
+    radial-gradient(circle at right top, rgba(125, 230, 248, 0.24), transparent 40%),
+    rgba(14, 7, 26, 0.9);
+}
+
+.highlight h3 {
+  margin: 4px 0 8px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.site-footer {
+  margin-top: 48px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--muted);
+  padding: 20px 0 32px;
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .site-nav {
+    display: none;
+  }
+
+  .grid-3,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    min-height: 420px;
+  }
+}
