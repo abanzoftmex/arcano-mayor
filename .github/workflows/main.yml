@@ -19,5 +19,5 @@ jobs:
           server: 195.35.33.109
           username: u947001429.alex
           password: ?[FlyCR>bWoXhp6Q
-          server-dir: /wp-content/themes/arcano-astral
+          server-dir: /wp-content/themes/arcano-astral/
           local-dir: ./
