@@ -3,8 +3,8 @@ Theme Name: Arcano Astral
 Theme URI: https://example.com/arcano-astral
 Author: Arcano Team
 Author URI: https://example.com
-Description: Cosmic eCommerce homepage theme for tarot services and astral products.
-Version: 1.0.0
+Description: Tema de ecommerce tarot con estetica astral moderna.
+Version: 1.1.0
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 7.4
@@ -14,16 +14,16 @@ Text Domain: arcano-astral
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap");
 
 :root {
-  --bg: #090312;
-  --bg-soft: #130623;
-  --card: rgba(24, 10, 42, 0.78);
-  --text: #f8f1ff;
-  --muted: #c9b6df;
-  --accent: #7de6f8;
-  --accent-2: #ffaee0;
-  --highlight: #ffe194;
-  --border: rgba(170, 132, 224, 0.35);
-  --shadow: 0 18px 42px rgba(0, 0, 0, 0.38);
+  --bg: #faf9f5;
+  --bg-soft: #f3efe7;
+  --card: rgba(255, 255, 255, 0.82);
+  --text: #1a1622;
+  --muted: #645c72;
+  --accent: #2c7282;
+  --accent-2: #bc8eb6;
+  --highlight: #9b6b00;
+  --border: rgba(69, 55, 94, 0.16);
+  --shadow: 0 14px 28px rgba(25, 19, 35, 0.08);
 }
 
 *,
@@ -41,12 +41,43 @@ body {
 body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
-  background:
-    radial-gradient(circle at 20% 10%, rgba(153, 97, 211, 0.35), transparent 36%),
-    radial-gradient(circle at 80% 0%, rgba(117, 211, 232, 0.22), transparent 40%),
-    linear-gradient(150deg, #06010d, #140523 45%, #090312 100%);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(188, 142, 182, 0.18), transparent 30%),
+    radial-gradient(circle at 90% 4%, rgba(44, 114, 130, 0.14), transparent 32%),
+    repeating-linear-gradient(
+      120deg,
+      rgba(84, 69, 109, 0.06) 0,
+      rgba(84, 69, 109, 0.06) 1px,
+      transparent 1px,
+      transparent 68px
+    );
   min-height: 100vh;
   line-height: 1.6;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  pointer-events: none;
+  inset: 0;
+  z-index: -1;
+}
+
+body::before {
+  background:
+    radial-gradient(circle at 14% 22%, rgba(44, 114, 130, 0.2) 0, rgba(44, 114, 130, 0) 18%),
+    radial-gradient(circle at 82% 74%, rgba(188, 142, 182, 0.22) 0, rgba(188, 142, 182, 0) 20%);
+}
+
+body::after {
+  background-image:
+    linear-gradient(10deg, transparent 49.3%, rgba(75, 60, 101, 0.07) 50%, transparent 50.7%),
+    linear-gradient(-10deg, transparent 49.3%, rgba(75, 60, 101, 0.06) 50%, transparent 50.7%);
+  background-size: 100% 240px, 100% 320px;
+  opacity: 0.7;
 }
 
 a {
@@ -68,9 +99,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  background: rgba(9, 3, 18, 0.82);
+  border-bottom: 1px solid rgba(26, 22, 34, 0.08);
+  backdrop-filter: blur(10px);
+  background: rgba(250, 249, 245, 0.86);
 }
 
 .site-header__inner {
@@ -99,12 +130,16 @@ img {
   font-size: 0.92rem;
 }
 
+.site-nav a:hover {
+  color: var(--text);
+}
+
 .shop-pill {
   padding: 9px 14px;
   border-radius: 999px;
   font-weight: 700;
   background: linear-gradient(120deg, var(--accent), var(--accent-2));
-  color: #120720;
+  color: #fff;
 }
 
 .hero {
@@ -153,13 +188,14 @@ img {
 }
 
 .button-primary {
-  color: #11061e;
+  color: #fff;
   background: linear-gradient(120deg, var(--accent), var(--accent-2));
 }
 
 .button-secondary {
   border: 1px solid var(--border);
   color: var(--text);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .hero-card {
@@ -183,8 +219,8 @@ img {
   right: 18px;
   padding: 16px;
   border-radius: 14px;
-  background: rgba(8, 2, 16, 0.74);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(250, 249, 245, 0.88);
+  border: 1px solid rgba(26, 22, 34, 0.12);
 }
 
 .section {
@@ -213,6 +249,7 @@ img {
   border-radius: 18px;
   background: var(--card);
   box-shadow: var(--shadow);
+  backdrop-filter: blur(5px);
 }
 
 .service-card {
@@ -261,10 +298,10 @@ img {
 .highlight {
   padding: 28px;
   border-radius: 24px;
-  border: 1px solid rgba(125, 230, 248, 0.45);
+  border: 1px solid rgba(44, 114, 130, 0.24);
   background:
-    radial-gradient(circle at right top, rgba(125, 230, 248, 0.24), transparent 40%),
-    rgba(14, 7, 26, 0.9);
+    radial-gradient(circle at right top, rgba(44, 114, 130, 0.12), transparent 44%),
+    rgba(255, 255, 255, 0.74);
 }
 
 .highlight h3 {
@@ -275,7 +312,7 @@ img {
 
 .site-footer {
   margin-top: 48px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(26, 22, 34, 0.08);
   color: var(--muted);
   padding: 20px 0 32px;
 }
