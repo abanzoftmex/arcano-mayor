@@ -1,4 +1,4 @@
-name: Deploy Astra Child to Hostinger
+name: Deploy WordPress Plugin
 
 on:
   push:
@@ -7,24 +7,17 @@ on:
 
 jobs:
   deploy:
-    name: 🚀 Deploy to Hostinger
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout código
+        uses: actions/checkout@v3
 
-      - name: 🚀 Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy a servidor FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: 195.35.33.109
-          username: u947001429.arcano
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
-          port: 21
+          username: u947001429.alex
+          password: ?[FlyCR>bWoXhp6Q
+          server-dir: /wp-content/themes/arcano-astral/
           local-dir: ./
-          server-dir: public_html/wp-content/themes/astra-child/
-          exclude: |
-            **/.git*
-            **/.github*
-            **/node_modules/**
