@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: 🚀 Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: 195.35.33.109
           username: u947001429.arcano
@@ -23,7 +23,7 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: ./
-          server-dir: public_html/wp-content/themes/astra-child/
+          server-dir: public_html/wp-content/themes/arcano-mayor/
           exclude: |
             **/.git*
             **/.github*
