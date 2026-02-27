@@ -4,17 +4,23 @@
 @tailwind utilities;
 
 :root {
-  --background: 220 23% 97%;
-  --foreground: 222 47% 11%;
-  --card: 0 0% 100%;
-  --card-foreground: 222 47% 11%;
-  --primary: 222 47% 11%;
-  --primary-foreground: 210 40% 98%;
-  --muted: 210 40% 96%;
-  --muted-foreground: 215 16% 47%;
-  --border: 214 32% 91%;
-  --input: 214 32% 91%;
-  --ring: 215 20% 65%;
+  --ui-background: 220 23% 97%;
+  --ui-foreground: 222 47% 11%;
+  --ui-card: 0 0% 100%;
+  --ui-card-foreground: 222 47% 11%;
+  --ui-popover: 0 0% 100%;
+  --ui-popover-foreground: 222 47% 11%;
+  --ui-primary: 222 47% 11%;
+  --ui-primary-foreground: 210 40% 98%;
+  --ui-secondary: 210 40% 96%;
+  --ui-secondary-foreground: 222 47% 11%;
+  --ui-muted: 210 40% 96%;
+  --ui-muted-foreground: 215 16% 47%;
+  --ui-accent: 210 40% 94%;
+  --ui-accent-foreground: 222 47% 11%;
+  --ui-border: 214 32% 91%;
+  --ui-input: 214 32% 91%;
+  --ui-ring: 215 20% 65%;
 }
 
 #arcano-frontend-app {
