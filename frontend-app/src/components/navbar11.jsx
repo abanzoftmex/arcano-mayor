@@ -120,7 +120,7 @@ const Navbar11 = ({
     <Fragment>
       <section
         className={cn(
-          "pointer-events-auto fixed top-0 z-[999] flex h-16 w-full items-center justify-center border-b border-border bg-background/95 text-sm font-medium text-foreground backdrop-blur",
+          "pointer-events-auto fixed top-0 z-[999] flex h-16 w-full items-center justify-center border-b border-border bg-background text-sm font-medium text-foreground",
           className
         )}>
         <div className="container">

@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-  --ui-background: 220 23% 97%;
+  --ui-background: 48 33% 97%;
   --ui-foreground: 222 47% 11%;
   --ui-card: 0 0% 100%;
   --ui-card-foreground: 222 47% 11%;
