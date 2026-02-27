@@ -21,22 +21,22 @@ const Feature149 = ({
             <img
               src={LEFT_IMAGE}
               alt="Lectura de tarot"
-              className="absolute inset-0 z-0 h-full w-full rounded-t-[20px] object-cover md:rounded-2xl"
+              className="absolute inset-0 z-0 h-full w-full rounded-t-[20px] object-cover brightness-[0.62] contrast-110 md:rounded-2xl"
             />
             <div
-              className="md:backdrop-blur-0 md:group-hover:backdrop-blur-0 absolute inset-0 z-10 rounded-t-[20px] bg-linear-to-b from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40" />
+              className="absolute inset-0 z-10 rounded-t-[20px] bg-linear-to-b from-black/70 via-black/60 to-black/50 transition-colors duration-300 md:rounded-2xl group-hover:md:from-black/75 group-hover:md:via-black/65 group-hover:md:to-black/55" />
             <div className="relative z-20 flex flex-col items-start gap-6">
               <Button
                 variant="outline"
                 className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
-                CRM Software
+                Lecturas personalizadas
               </Button>
               <h1 className="text-3xl font-bold text-white md:text-5xl">
-                Streamline Sales
+                Lectura de tarot
               </h1>
               <p className="max-w-md text-left text-white/90">
-                Streamline your sales process with our innovative CRM software.
-                Manage leads, track interactions, and boost your sales efficiency.
+                Elige una sesion enfocada en amor, trabajo, decisiones importantes
+                y crecimiento espiritual con guia clara y cercana.
               </p>
             </div>
           </div>
@@ -62,23 +62,23 @@ const Feature149 = ({
             <img
               src={RIGHT_IMAGE}
               alt="Cristales y energia"
-              className="absolute inset-0 z-0 h-full w-full rounded-b-[20px] object-cover md:rounded-2xl"
+              className="absolute inset-0 z-0 h-full w-full rounded-b-[20px] object-cover brightness-[0.62] contrast-110 md:rounded-2xl"
             />
             <div
-              className="md:backdrop-blur-0 md:group-hover:backdrop-blur-0 absolute inset-0 z-10 rounded-b-[20px] bg-linear-to-t from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40" />
+              className="absolute inset-0 z-10 rounded-b-[20px] bg-linear-to-t from-black/70 via-black/60 to-black/50 transition-colors duration-300 md:rounded-2xl group-hover:md:from-black/75 group-hover:md:via-black/65 group-hover:md:to-black/55" />
             <div className="relative z-20 flex flex-col items-start gap-6 md:items-end">
               <Button
                 variant="outline"
                 className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
-                Analytics Suite
+                Tienda espiritual
               </Button>
               <h1
                 className="text-left text-3xl font-bold text-white md:text-right md:text-5xl">
-                Measure Success
+                Cuarzos y mas productos
               </h1>
               <p className="max-w-md text-left text-white/90 md:text-right">
-                Enhance customer satisfaction and retention with our powerful CRM
-                tools. Analyze data and make informed decisions to drive growth.
+                Encuentra cuarzos, velas, inciensos y herramientas energeticas
+                para acompanar tus rituales y tu bienestar diario.
               </p>
             </div>
           </div>
