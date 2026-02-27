@@ -11,9 +11,9 @@ const Feature247 = () => {
       <div className="container flex flex-col items-center justify-center">
         <div className="flex w-full">
           <TextReveal
-            title="Elige una forma de conocer tu futuro"
+            title="Compra por intención"
             className="items-center justify-center text-center">
-            Tarot, carta astral, numerologia, cursos y mas servicios para guiar tu camino.
+            Elige una forma de conocer tu futuro
           </TextReveal>
         </div>
       </div>
