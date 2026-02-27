@@ -13,13 +13,11 @@ const Feature247 = () => {
           <TextReveal
             title="Compra por intención"
             className="items-center justify-center text-center"
+            description="Descubre un espacio dedicado a tu evolución personal y energética."
           >
             Elige una forma de conocer tu futuro
           </TextReveal>
         </div>
-        <p className="mt-5 text-base text-muted-foreground md:text-lg">
-          Descubre un espacio dedicado a tu evolución personal y energética.
-        </p>
       </div>
     </section>
   );
@@ -27,7 +25,7 @@ const Feature247 = () => {
 
 export { Feature247 };
 
-const TextReveal = ({ children, title, className }) => {
+const TextReveal = ({ children, title, description, className }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -62,6 +60,9 @@ const TextReveal = ({ children, title, className }) => {
                 );
               })}
             </span>
+            <p className="mt-3 text-center text-base text-muted-foreground md:text-lg">
+              {description}
+            </p>
           </div>
         </div>
       </div>
