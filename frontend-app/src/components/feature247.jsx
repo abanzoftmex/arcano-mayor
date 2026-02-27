@@ -71,7 +71,7 @@ const TextReveal = ({ children, title, description, className }) => {
 };
 
 const Word = ({ children, progress, range }) => {
-  const opacity = useTransform(progress, range, [0, 1]);
+  const opacity = useTransform(progress, range, [1, 0]);
   return (
     <span className="xl:lg-3 relative mx-1 lg:mx-1.5">
       <span className="absolute opacity-30">{children}</span>
