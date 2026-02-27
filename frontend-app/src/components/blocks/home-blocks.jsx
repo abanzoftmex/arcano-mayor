@@ -20,8 +20,8 @@ export function HomeBlocks() {
       <Hero55 />
       <Hero234 />
       <Feature247 />
-      <Feature149 />
-      <Feature149B />
+      <Feature149 className="pt-10 pb-5 md:pt-16 md:pb-5 lg:pt-20 lg:pb-5" />
+      <Feature149B className="pt-5 pb-10 md:pt-5 md:pb-16 lg:pt-5 lg:pb-20" />
     </>
   );
 }
