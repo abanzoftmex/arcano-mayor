@@ -14,7 +14,7 @@ Text Domain: arcano-astral
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@500;600;700&display=swap");
 
 :root {
-  --background: #faf9f5;
+  --background: #fefcf7;
   --foreground: #111827;
   --muted: #64748b;
   --card: #ffffff;
@@ -34,14 +34,14 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #faf9f5 !important;
+  background-color: #fefcf7 !important;
   background-image: none !important;
 }
 
 body {
   font-family: "DM Sans", sans-serif;
   color: var(--foreground);
-  background: #faf9f5 !important;
+  background: #fefcf7 !important;
   background-image: none !important;
   line-height: 1.6;
 }
