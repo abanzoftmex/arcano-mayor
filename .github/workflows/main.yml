@@ -8,16 +8,25 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Deploy a servidor FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: 195.35.33.109
           username: u947001429.alex
-          password: ?[FlyCR>bWoXhp6Q
+          password: "?[FlyCR>bWoXhp6Q"
+          port: 21
+          protocol: ftp
           server-dir: /wp-content/themes/arcano-astral/
           local-dir: ./
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/.DS_Store
+            **/frontend-app/.env
