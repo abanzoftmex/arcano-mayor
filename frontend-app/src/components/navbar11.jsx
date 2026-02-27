@@ -344,7 +344,7 @@ const Navbar11 = ({
                   variant={!btn.isPrimary ? "outline" : "default"}
                   className={
                     btn.isPrimary
-                      ? "text-primary-foreground"
+                      ? "!text-primary-foreground"
                       : "text-foreground"
                   }
                   asChild
@@ -455,7 +455,7 @@ const MobileNavigationMenu = ({
                     variant={!btn.isPrimary ? "outline" : "default"}
                     className={
                       btn.isPrimary
-                        ? "text-primary-foreground"
+                        ? "!text-primary-foreground"
                         : "text-foreground"
                     }
                     asChild
