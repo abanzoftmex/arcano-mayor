@@ -4,17 +4,18 @@ import React from "react";
 import { useRef } from "react";
 
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 const Feature247 = () => {
   return (
-    <section className="py-32">
+    <section className="pb-32">
       <div className="container flex flex-col items-center justify-center">
         <div className="flex max-w-4xl">
           <TextReveal
-            title=" { Shadcn Blocks }"
-            className="items-center justify-center text-center">
-            And the coolest part? This is just the beginning—there&apos;s so
-            much more coming your way
+            title="Servicios y tienda espiritual"
+            className="items-start justify-start text-left">
+            Explora todo lo que tenemos para ti: lectura de tarot, cuarzos, carta astral,
+            numerologia, cursos y muchos servicios mas para acompanar tu proceso.
           </TextReveal>
         </div>
       </div>
@@ -44,9 +45,10 @@ const TextReveal = ({
       style={{ maxWidth: maxWidth || "56rem" }}>
       <div
         className="sticky top-0 mx-auto flex h-[50%] items-center bg-transparent px-[1rem] py-[5rem]">
-        <div ref={targetRef} className="flex flex-col justify-center">
+        <div className="flex w-full flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          <div ref={targetRef} className="flex flex-col justify-center">
           <span
-            className="text-center text-lg font-medium tracking-tight text-foreground">
+            className="text-left text-lg font-medium tracking-tight text-foreground">
             {title}
           </span>
           <span
@@ -64,6 +66,12 @@ const TextReveal = ({
               );
             })}
           </span>
+          </div>
+          <div className="md:pr-8">
+            <Button size="lg" asChild>
+              <a href="#tienda">Ver tienda</a>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
