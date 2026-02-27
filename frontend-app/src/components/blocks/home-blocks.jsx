@@ -2,6 +2,7 @@ import { Navbar11 } from "../navbar11";
 import { Hero55 } from "../hero55";
 import { Hero234 } from "../hero234";
 import { Feature247 } from "../feature247";
+import { Feature149 } from "../feature149";
 import { PromoBanner2 } from "../promo-banner2";
 
 export function HomeBlocks() {
@@ -18,6 +19,7 @@ export function HomeBlocks() {
       <Hero55 />
       <Hero234 />
       <Feature247 />
+      <Feature149 />
     </>
   );
 }
