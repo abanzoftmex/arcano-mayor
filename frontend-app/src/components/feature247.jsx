@@ -17,8 +17,7 @@ const Feature247 = () => {
             Elige una forma de conocer tu futuro
           </TextReveal>
           <p className="mt-5 text-base text-muted-foreground md:text-lg">
-            Explora nuestros servicios: lectura de tarot, carta astral,
-            numerologia, cursos y productos para tu bienestar espiritual.
+            Descubre un espacio dedicado a tu evolución personal y energética.
           </p>
         </div>
       </div>
