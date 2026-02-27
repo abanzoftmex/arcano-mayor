@@ -19,9 +19,7 @@ const Hero55 = ({
             Lectura inicial de 15 minutos
             <ArrowRight className="h-auto w-4" />
           </a>
-          <h1 className="text-4xl font-semibold lg:text-8xl">
-            Descubre claridad y direccion con una lectura de tarot profesional
-          </h1>
+          <h1 className="text-4xl font-semibold lg:text-8xl">Encuentra la paz mental y conócete mejor a ti mismo.</h1>
           <p className="max-w-2xl text-base text-muted-foreground lg:text-lg">
             Sesiones personalizadas para amor, trabajo, finanzas y crecimiento espiritual.
             Elige entre consulta en vivo, reporte escrito o guia mensual.
