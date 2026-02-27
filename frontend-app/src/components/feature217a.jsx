@@ -6,21 +6,21 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const FEATURES = [
   {
-    title: "Keyboard Navigation",
+    title: "Lecturas por enfoque",
     summary:
-      "Ensure all interactive elements are accessible via keyboard alone, allowing users with motor impairments to navigate easily and efficiently without a mouse.",
+      "Elige sesiones orientadas a amor, trabajo, decisiones personales o crecimiento espiritual, con guía clara y práctica.",
     icon: Keyboard,
   },
   {
-    title: "Screen Reader Friendly",
+    title: "Agenda rápida de citas",
     summary:
-      "Use semantic HTML and proper ARIA labels to help screen readers convey structure and meaning clearly to users with visual impairments.",
+      "Reserva tu consulta en minutos y selecciona el formato que prefieras: sesión en vivo, seguimiento o lectura personalizada.",
     icon: Volume2,
   },
   {
-    title: "Color Contrast Check",
+    title: "Tienda espiritual",
     summary:
-      "Maintain strong color contrast between text and background to support users with low vision and improve readability across different lighting conditions.",
+      "Explora cuarzos, velas, inciensos, dijes de protección y más herramientas energéticas para tu día a día.",
     icon: Eye,
   },
 ];
@@ -50,19 +50,18 @@ const Feature217a = ({
         className="relative bg-cover bg-center bg-no-repeat py-10 after:absolute after:inset-0 after:z-10 after:block after:size-full after:bg-black/40 after:content-[''] md:py-16 xl:px-6 xl:py-28"
         style={{
           backgroundImage:
-            "url('https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/futuristic-device-design-qcufu.png')",
+            "url('https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?auto=format&fit=crop&w=2000&q=80')",
         }}>
         <div className="relative z-20 container">
           <div className="flex flex-col items-center justify-center gap-12 text-center">
             <div className="flex max-w-4xl flex-col gap-5">
               <h2 className="text-2xl tracking-tight text-white md:text-7xl">
-                Incredible AI-powered video editing
+                Tu espacio de guía y energía
               </h2>
               <div className="text-lg font-medium tracking-tight text-white">
-                Accessibility ensures digital content is usable by all,
-                including people with disabilities, by following inclusive
-                design practices and meeting standards like WCAG for equal user
-                experience.
+                Conecta con tu intuición a través de lecturas de tarot, agenda
+                tus citas y encuentra productos seleccionados para proteger y
+                armonizar tu energía.
               </div>
             </div>
             <div className="max-w-xl">
@@ -70,7 +69,7 @@ const Feature217a = ({
                 ratio={0.80239521}
                 className="w-full overflow-hidden rounded-xl shadow-xl">
                 <img
-                  src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-dark-1.svg"
+                  src="https://images.unsplash.com/photo-1600429991827-5224817554f8?auto=format&fit=crop&w=900&q=80"
                   alt=""
                   className="block size-full object-cover object-center" />
               </AspectRatio>
