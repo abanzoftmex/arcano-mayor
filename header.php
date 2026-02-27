@@ -13,11 +13,11 @@
             Arcano <span>Astral</span>
         </a>
         <nav class="site-nav">
-            <a href="#servicios">Servicios</a>
-            <a href="#tienda">Tienda</a>
-            <a href="#ritual">Caja Ritual</a>
-            <a href="#guia">Guía</a>
+            <a href="#features">Servicios</a>
+            <a href="#catalogo">Catalogo</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#contacto">Contacto</a>
         </nav>
-        <a href="#tienda" class="shop-pill">Entrar a la tienda</a>
+        <a href="#catalogo" class="shop-pill">Ver bloques</a>
     </div>
 </header>
