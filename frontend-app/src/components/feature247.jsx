@@ -16,10 +16,10 @@ const Feature247 = () => {
           >
             Elige una forma de conocer tu futuro
           </TextReveal>
-          <p className="mt-5 text-base text-muted-foreground md:text-lg">
-            Descubre un espacio dedicado a tu evolución personal y energética.
-          </p>
         </div>
+        <p className="mt-5 text-base text-muted-foreground md:text-lg">
+          Descubre un espacio dedicado a tu evolución personal y energética.
+        </p>
       </div>
     </section>
   );
