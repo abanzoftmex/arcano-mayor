@@ -46,8 +46,6 @@ import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 
 const LOGO = {
   url: "https://www.shadcnblocks.com",
-  src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-  alt: "logo",
   title: "Shadcnblocks.com",
 };
 
@@ -326,8 +324,8 @@ const Navbar11 = ({
               <a
                 href={LOGO.url}
                 className="flex max-h-8 items-center gap-2 text-sm font-medium tracking-normal">
-                <img src={LOGO.src} alt={LOGO.alt} className="inline-block size-6" />
                 <span className="hidden md:inline-block">{LOGO.title}</span>
+                <span className="md:hidden">{LOGO.title}</span>
               </a>
               <NavigationMenu className="hidden xl:flex" viewport={false}>
                 <NavigationMenuList>
