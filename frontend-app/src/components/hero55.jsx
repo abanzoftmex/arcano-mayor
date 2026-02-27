@@ -9,9 +9,9 @@ const Hero55 = ({
   className
 }) => {
   return (
-    <section className={cn("relative pt-32 lg:pt-40", className)}>
+    <section className={cn("relative pb-14 pt-36 md:pb-20 md:pt-40 lg:pb-24 lg:pt-44", className)}>
       <div className="container">
-        <div className="flex flex-col items-center gap-10 text-center">
+        <div className="flex flex-col items-center gap-8 text-center md:gap-10">
           <a
             href="#servicios"
             className="flex items-center gap-2 rounded-full px-2 py-1 text-sm transition-colors hover:bg-muted">
@@ -19,11 +19,11 @@ const Hero55 = ({
             Reserva tu cita en segundos
             <ArrowRight className="h-auto w-4" />
           </a>
-          <h1 className="text-4xl font-semibold lg:text-8xl">Descubre tu camino, conecta con tu energía</h1>
+          <h1 className="text-4xl font-semibold md:text-6xl lg:text-7xl">Descubre tu camino, conecta con tu energía</h1>
           <p className="max-w-2xl text-base text-muted-foreground lg:text-lg">
             Vive una experiencia espiritual integral con asesorías privadas y una tienda especializada en artículos energéticos.
           </p>
-          <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
+          <div className="flex w-full flex-col justify-center gap-3 sm:flex-row">
             <Button size="lg" asChild>
               <a href="#tienda">Comprar productos</a>
             </Button>

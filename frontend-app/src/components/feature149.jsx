@@ -12,12 +12,12 @@ const Feature149 = ({
     "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1600&q=80";
 
   return (
-    <section className={cn("py-32", className)}>
+    <section className={cn("py-10 md:py-16 lg:py-20", className)}>
       <div className="container">
         <div className="relative flex flex-col md:flex-row md:gap-0">
           {/* Left panel */}
           <div
-            className="group relative isolate flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 overflow-hidden p-6 md:h-[600px] md:w-1/2 md:p-10 md:transition-[width] hover:md:w-2/3">
+            className="group relative isolate flex h-[280px] w-full cursor-pointer flex-col items-start gap-5 overflow-hidden p-5 md:h-[560px] md:w-1/2 md:gap-6 md:p-8 md:transition-[width] hover:md:w-2/3">
             <img
               src={LEFT_IMAGE}
               alt="Lectura de tarot"
@@ -42,7 +42,7 @@ const Feature149 = ({
           </div>
 
           {/* Desktop divider - only visible on desktop */}
-          <div className="relative hidden h-[600px] w-5 bg-background md:block">
+          <div className="relative hidden h-[560px] w-5 bg-background md:block">
             <div
               className="absolute top-0 left-[-40px] h-[40px] w-[40px] rounded-[1rem] shadow-[10px_-10px_0_0_var(--background)]" />
             <div
@@ -55,7 +55,7 @@ const Feature149 = ({
 
           {/* Right panel */}
           <div
-            className="group relative isolate flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 overflow-hidden p-6 md:h-[600px] md:w-1/2 md:items-end md:p-10 md:transition-[width] hover:md:w-2/3"
+            className="group relative isolate flex h-[280px] w-full cursor-pointer flex-col items-start gap-5 overflow-hidden p-5 md:h-[560px] md:w-1/2 md:items-end md:gap-6 md:p-8 md:transition-[width] hover:md:w-2/3"
             onClick={() => {
               console.log("click");
             }}>
