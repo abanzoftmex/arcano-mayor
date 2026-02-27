@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 const Feature247 = () => {
   return (
-    <section className="pb-32">
+    <section className="pb-10 pt-6">
       <div className="container flex flex-col items-center justify-center">
         <div className="flex w-full">
           <TextReveal
@@ -36,9 +36,9 @@ const TextReveal = ({ children, title, description, className }) => {
   return (
     <div
       ref={targetRef}
-      className={cn("relative z-0 h-[120vh] w-full", className)}
+      className={cn("relative z-0 h-[58vh] w-full", className)}
     >
-      <div className="sticky top-20 mx-auto flex h-auto items-center bg-transparent px-4 py-10">
+      <div className="sticky top-16 mx-auto flex h-auto items-center bg-transparent px-4 py-6">
         <div className="flex w-full flex-col items-center justify-center gap-6">
           <div ref={targetRef} className="flex flex-col justify-center">
             <span className="text-center text-lg font-medium tracking-tight text-foreground">
