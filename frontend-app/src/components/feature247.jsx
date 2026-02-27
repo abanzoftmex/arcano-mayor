@@ -30,6 +30,9 @@ const TextReveal = ({ children, title, description, className }) => {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
+  const revealProgress = useTransform(scrollYProgress, [0, 0.75], [0, 1], {
+    clamp: true,
+  });
 
   const words = children.split(" ");
 
@@ -55,7 +58,7 @@ const TextReveal = ({ children, title, description, className }) => {
                 const start = reverseIndex / words.length;
                 const end = start + 1 / words.length;
                 return (
-                  <Word key={i} progress={scrollYProgress} range={[start, end]}>
+                  <Word key={i} progress={revealProgress} range={[start, end]}>
                     {word}
                   </Word>
                 );
