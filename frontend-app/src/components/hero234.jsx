@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
 
-import { Button } from "@/components/ui/button";
-
 const galleryImages = [
   [
     "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/lummi/bw1.jpeg",
@@ -68,33 +66,6 @@ const Hero234 = ({
       {/* Right side masks */}
       <div
         className="absolute top-0 right-0 z-10 h-full w-[160px] bg-gradient-to-l from-background to-transparent md:w-[200px]" />
-      <div className="relative z-20 flex min-h-screen items-center justify-center">
-        <motion.div
-          className="rounded-lg bg-black/60 p-8 backdrop-blur-md md:p-12"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}>
-          <motion.h1
-            className="text-3xl leading-tight text-white md:text-5xl lg:text-6xl"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}>
-            A Studio <br />
-            Crafting <br />
-            Digital Art
-          </motion.h1>
-
-          <motion.div
-            className="mt-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1 }}>
-            <Button size="lg" variant="secondary">
-              View Projects
-            </Button>
-          </motion.div>
-        </motion.div>
-      </div>
     </section>
   );
 };

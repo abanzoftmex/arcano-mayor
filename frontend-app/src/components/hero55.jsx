@@ -9,7 +9,7 @@ const Hero55 = ({
   className
 }) => {
   return (
-    <section className={cn("relative py-32 lg:py-40", className)}>
+    <section className={cn("relative pt-32 lg:pt-40", className)}>
       <div className="container">
         <div className="flex flex-col items-center gap-10 text-center">
           <a
