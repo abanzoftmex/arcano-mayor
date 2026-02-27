@@ -30,7 +30,7 @@ const TextReveal = ({ children, title, description, className }) => {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const revealProgress = useTransform(scrollYProgress, [0, 0.75], [0, 1], {
+  const revealProgress = useTransform(scrollYProgress, [0.18, 1], [0, 1], {
     clamp: true,
   });
 
