@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 const Feature149 = ({
   className
 }) => {
-  const LEFT_IMAGE = "https://source.unsplash.com/1600x900/?tarot,cards";
-  const RIGHT_IMAGE = "https://source.unsplash.com/1600x900/?crystals,spiritual";
+  const LEFT_IMAGE =
+    "https://images.unsplash.com/photo-1504198266285-165a7f5a5f9a?auto=format&fit=crop&w=1600&q=80";
+  const RIGHT_IMAGE =
+    "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1600&q=80";
 
   return (
     <section className={cn("py-32", className)}>
