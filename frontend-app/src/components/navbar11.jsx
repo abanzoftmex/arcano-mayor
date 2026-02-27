@@ -317,7 +317,7 @@ const Navbar11 = ({
     <Fragment>
       <section
         className={cn(
-          "pointer-events-auto fixed top-0 z-[999] flex h-16 w-full items-center justify-center border-b border-border bg-background/95 text-foreground backdrop-blur",
+          "pointer-events-auto fixed top-0 z-[999] flex h-16 w-full items-center justify-center border-b border-border bg-background/95 text-sm font-medium text-foreground backdrop-blur",
           className
         )}>
         <div className="container">
@@ -325,7 +325,7 @@ const Navbar11 = ({
             <div className="flex items-center gap-8">
               <a
                 href={LOGO.url}
-                className="flex max-h-8 items-center gap-2 text-lg font-semibold tracking-tighter">
+                className="flex max-h-8 items-center gap-2 text-sm font-medium tracking-normal">
                 <img src={LOGO.src} alt={LOGO.alt} className="inline-block size-6" />
                 <span className="hidden md:inline-block">{LOGO.title}</span>
               </a>
