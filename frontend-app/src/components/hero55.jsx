@@ -31,9 +31,6 @@ const Hero55 = ({
             <Button size="lg" variant="outline" asChild>
               <a href="#servicios">Agendar cita</a>
             </Button>
-            <Button size="lg" variant="ghost" asChild>
-              <a href="#contacto">Hablar por WhatsApp</a>
-            </Button>
           </div>
         </div>
       </div>
