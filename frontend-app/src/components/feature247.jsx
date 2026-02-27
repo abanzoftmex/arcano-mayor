@@ -51,7 +51,8 @@ const TextReveal = ({ children, title, description, className }) => {
               )}
             >
               {words.map((word, i) => {
-                const start = i / words.length;
+                const reverseIndex = words.length - 1 - i;
+                const start = reverseIndex / words.length;
                 const end = start + 1 / words.length;
                 return (
                   <Word key={i} progress={scrollYProgress} range={[start, end]}>
