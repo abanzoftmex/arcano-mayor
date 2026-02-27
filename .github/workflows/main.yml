@@ -15,15 +15,18 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy a servidor FTP
-        uses: airvzxf/ftp-deployment-action@v1.3.3
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: 195.35.33.109
-          user: u947001429.alex
+          username: u947001429.alex
           password: "?[FlyCR>bWoXhp6Q"
-          local_dir: "./"
-          remote_dir: "/wp-content/themes/arcano-astral/"
-          ftp_ssl_allow: "false"
-          ftp_passive_mode: "true"
-          max_retries: "8"
-          net_timeout: "40s"
-          lftp_settings: "set ssl:verify-certificate false; set cmd:status-interval 2s;"
+          protocol: ftp
+          port: 21
+          server-dir: /wp-content/themes/arcano-astral/
+          local-dir: ./
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/node_modules/**
+            **/.DS_Store
+            **/frontend-app/.env
