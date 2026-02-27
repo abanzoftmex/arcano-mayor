@@ -6,19 +6,21 @@ import { Button } from "@/components/ui/button";
 const Feature149 = ({
   className
 }) => {
+  const LEFT_IMAGE = "https://source.unsplash.com/1600x900/?tarot,cards";
+  const RIGHT_IMAGE = "https://source.unsplash.com/1600x900/?crystals,spiritual";
+
   return (
     <section className={cn("py-32", className)}>
       <div className="container">
         <div className="relative flex flex-col md:flex-row md:gap-0">
-          {/* Background image - positioned absolutely */}
-          <img
-            src="https://deifkwefumgah.cloudfront.net/shadcnblocks/block/photos/simone-hutsch-9jsQcDsxyqA-unsplash.jpg"
-            alt="Background image"
-            className="absolute top-0 left-0 z-[-1] h-full w-full rounded-2xl object-cover" />
-
           {/* Left panel */}
           <div
             className="group relative flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 p-6 md:h-[600px] md:w-1/2 md:p-10 md:transition-[width] hover:md:w-2/3">
+            <img
+              src={LEFT_IMAGE}
+              alt="Lectura de tarot"
+              className="absolute top-0 left-0 z-[-2] h-full w-full rounded-t-[20px] object-cover md:rounded-2xl"
+            />
             <div
               className="md:backdrop-blur-0 md:group-hover:backdrop-blur-0 absolute top-0 left-0 z-[-1] h-full w-full rounded-t-[20px] bg-linear-to-b from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40" />
             <Button
@@ -53,6 +55,11 @@ const Feature149 = ({
             onClick={() => {
               console.log("click");
             }}>
+            <img
+              src={RIGHT_IMAGE}
+              alt="Cristales y energia"
+              className="absolute top-0 left-0 z-[-2] h-full w-full rounded-b-[20px] object-cover md:rounded-2xl"
+            />
             <div
               className="md:backdrop-blur-0 md:group-hover:backdrop-blur-0 absolute top-0 left-0 z-[-1] h-full w-full rounded-b-[20px] bg-linear-to-t from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40" />
             <Button
