@@ -24,7 +24,7 @@ const Feature149 = ({
               className="absolute inset-0 z-0 h-full w-full rounded-t-[20px] object-cover brightness-[0.62] contrast-110 md:rounded-2xl"
             />
             <div
-              className="absolute inset-0 z-10 rounded-t-[20px] bg-black/65 transition-colors duration-300 md:rounded-2xl group-hover:bg-black/70" />
+              className="absolute inset-0 z-10 rounded-t-[20px] bg-black/45 transition-colors duration-300 md:rounded-2xl group-hover:bg-black/55" />
             <div className="relative z-20 flex flex-col items-start gap-6">
               <Button
                 variant="outline"
@@ -65,20 +65,20 @@ const Feature149 = ({
               className="absolute inset-0 z-0 h-full w-full rounded-b-[20px] object-cover brightness-[0.62] contrast-110 md:rounded-2xl"
             />
             <div
-              className="absolute inset-0 z-10 rounded-b-[20px] bg-black/65 transition-colors duration-300 md:rounded-2xl group-hover:bg-black/70" />
+              className="absolute inset-0 z-10 rounded-b-[20px] bg-black/45 transition-colors duration-300 md:rounded-2xl group-hover:bg-black/55" />
             <div className="relative z-20 flex flex-col items-start gap-6 md:items-end">
               <Button
                 variant="outline"
                 className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
-                Tienda espiritual
+                Tienda esotérica
               </Button>
               <h1
                 className="text-left text-3xl font-bold text-white md:text-right md:text-5xl">
-                Cuarzos y mas productos
+                Cuarzos y más
               </h1>
               <p className="max-w-md text-left text-white/90 md:text-right">
-                Encuentra cuarzos, velas, inciensos y herramientas energeticas
-                para acompanar tus rituales y tu bienestar diario.
+                Descubre cuarzos, velas e inciensos para proteger, armonizar y
+                potenciar tu energía todos los días.
               </p>
             </div>
           </div>
