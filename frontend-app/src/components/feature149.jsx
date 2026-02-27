@@ -7,7 +7,7 @@ const Feature149 = ({
   className
 }) => {
   const LEFT_IMAGE =
-    "https://images.unsplash.com/photo-1504198266285-165a7f5a5f9a?auto=format&fit=crop&w=1600&q=80";
+    "https://images.unsplash.com/photo-1600429991827-5224817554f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   const RIGHT_IMAGE =
     "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1600&q=80";
 
@@ -17,26 +17,28 @@ const Feature149 = ({
         <div className="relative flex flex-col md:flex-row md:gap-0">
           {/* Left panel */}
           <div
-            className="group relative flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 p-6 md:h-[600px] md:w-1/2 md:p-10 md:transition-[width] hover:md:w-2/3">
+            className="group relative isolate flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 overflow-hidden p-6 md:h-[600px] md:w-1/2 md:p-10 md:transition-[width] hover:md:w-2/3">
             <img
               src={LEFT_IMAGE}
               alt="Lectura de tarot"
-              className="absolute top-0 left-0 z-[-2] h-full w-full rounded-t-[20px] object-cover md:rounded-2xl"
+              className="absolute inset-0 z-0 h-full w-full rounded-t-[20px] object-cover md:rounded-2xl"
             />
             <div
-              className="md:backdrop-blur-0 md:group-hover:backdrop-blur-0 absolute top-0 left-0 z-[-1] h-full w-full rounded-t-[20px] bg-linear-to-b from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40" />
-            <Button
-              variant="outline"
-              className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
-              CRM Software
-            </Button>
-            <h1 className="text-3xl font-bold text-white md:text-5xl">
-              Streamline Sales
-            </h1>
-            <p className="max-w-md text-left text-white/90">
-              Streamline your sales process with our innovative CRM software.
-              Manage leads, track interactions, and boost your sales efficiency.
-            </p>
+              className="md:backdrop-blur-0 md:group-hover:backdrop-blur-0 absolute inset-0 z-10 rounded-t-[20px] bg-linear-to-b from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40" />
+            <div className="relative z-20 flex flex-col items-start gap-6">
+              <Button
+                variant="outline"
+                className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
+                CRM Software
+              </Button>
+              <h1 className="text-3xl font-bold text-white md:text-5xl">
+                Streamline Sales
+              </h1>
+              <p className="max-w-md text-left text-white/90">
+                Streamline your sales process with our innovative CRM software.
+                Manage leads, track interactions, and boost your sales efficiency.
+              </p>
+            </div>
           </div>
 
           {/* Desktop divider - only visible on desktop */}
@@ -53,30 +55,32 @@ const Feature149 = ({
 
           {/* Right panel */}
           <div
-            className="group relative flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 p-6 md:h-[600px] md:w-1/2 md:items-end md:p-10 md:transition-[width] hover:md:w-2/3"
+            className="group relative isolate flex h-[300px] w-full cursor-pointer flex-col items-start gap-6 overflow-hidden p-6 md:h-[600px] md:w-1/2 md:items-end md:p-10 md:transition-[width] hover:md:w-2/3"
             onClick={() => {
               console.log("click");
             }}>
             <img
               src={RIGHT_IMAGE}
               alt="Cristales y energia"
-              className="absolute top-0 left-0 z-[-2] h-full w-full rounded-b-[20px] object-cover md:rounded-2xl"
+              className="absolute inset-0 z-0 h-full w-full rounded-b-[20px] object-cover md:rounded-2xl"
             />
             <div
-              className="md:backdrop-blur-0 md:group-hover:backdrop-blur-0 absolute top-0 left-0 z-[-1] h-full w-full rounded-b-[20px] bg-linear-to-t from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40" />
-            <Button
-              variant="outline"
-              className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
-              Analytics Suite
-            </Button>
-            <h1
-              className="text-left text-3xl font-bold text-white md:text-right md:text-5xl">
-              Measure Success
-            </h1>
-            <p className="max-w-md text-left text-white/90 md:text-right">
-              Enhance customer satisfaction and retention with our powerful CRM
-              tools. Analyze data and make informed decisions to drive growth.
-            </p>
+              className="md:backdrop-blur-0 md:group-hover:backdrop-blur-0 absolute inset-0 z-10 rounded-b-[20px] bg-linear-to-t from-black/40 to-black/30 backdrop-filter transition-all duration-500 ease-out group-hover:from-black/30 group-hover:to-black/20 group-hover:backdrop-blur-[2px] md:rounded-2xl md:from-black/40 md:to-black/30 md:transition-colors md:duration-300 group-hover:md:from-black/50 group-hover:md:to-black/40" />
+            <div className="relative z-20 flex flex-col items-start gap-6 md:items-end">
+              <Button
+                variant="outline"
+                className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
+                Analytics Suite
+              </Button>
+              <h1
+                className="text-left text-3xl font-bold text-white md:text-right md:text-5xl">
+                Measure Success
+              </h1>
+              <p className="max-w-md text-left text-white/90 md:text-right">
+                Enhance customer satisfaction and retention with our powerful CRM
+                tools. Analyze data and make informed decisions to drive growth.
+              </p>
+            </div>
           </div>
         </div>
       </div>
