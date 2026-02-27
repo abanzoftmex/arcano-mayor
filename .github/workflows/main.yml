@@ -21,7 +21,8 @@ jobs:
           username: u947001429.alex
           password: "?[FlyCR>bWoXhp6Q"
           port: 21
-          protocol: ftp
+          protocol: ftps
+          log-level: verbose
           server-dir: /wp-content/themes/arcano-astral/
           local-dir: ./
           exclude: |
