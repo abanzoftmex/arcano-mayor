@@ -3,24 +3,23 @@ import { cn } from "@/lib/utils";
 
 import { Button } from "@/components/ui/button";
 
-const Feature149 = ({
+const Feature149B = ({
   className
 }) => {
   const LEFT_IMAGE =
-    "https://images.unsplash.com/photo-1600429991827-5224817554f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1600&q=80";
   const RIGHT_IMAGE =
-    "https://plus.unsplash.com/premium_photo-1700081738828-dee31074f04f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    "https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?auto=format&fit=crop&w=1600&q=80";
 
   return (
     <section className={cn("py-10 md:py-16 lg:py-20", className)}>
       <div className="container">
         <div className="relative flex flex-col md:flex-row md:gap-0">
-          {/* Left panel */}
           <div
             className="group relative isolate flex h-[280px] w-full cursor-pointer flex-col items-start gap-5 overflow-hidden p-5 md:h-[560px] md:w-1/2 md:gap-6 md:p-8 md:transition-[width] hover:md:w-2/3">
             <img
               src={LEFT_IMAGE}
-              alt="Lectura de tarot"
+              alt="Dijes de protección"
               className="absolute inset-0 z-0 h-full w-full rounded-t-[20px] object-cover brightness-[0.62] contrast-110 md:rounded-2xl"
             />
             <div
@@ -29,19 +28,18 @@ const Feature149 = ({
               <Button
                 variant="outline"
                 className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
-                Lecturas personalizadas
+                Protección energética
               </Button>
-              <h1 className="text-3xl font-bold text-white md:text-5xl">
-                Lectura de tarot
-              </h1>
+              <h2 className="text-3xl font-bold text-white md:text-5xl">
+                Dijes de protección
+              </h2>
               <p className="max-w-md text-left text-white/90">
-                Elige una sesion enfocada en amor, trabajo, decisiones importantes
-                y crecimiento espiritual con guia clara y cercana.
+                Elige dijes cargados con intención para resguardar tu energía y
+                acompañarte en tu día a día.
               </p>
             </div>
           </div>
 
-          {/* Desktop divider - only visible on desktop */}
           <div className="relative hidden h-[560px] w-5 bg-background md:block">
             <div
               className="absolute top-0 left-[-40px] h-[40px] w-[40px] rounded-[1rem] shadow-[10px_-10px_0_0_var(--background)]" />
@@ -53,15 +51,10 @@ const Feature149 = ({
               className="absolute right-[-40px] bottom-0 h-[40px] w-[40px] rounded-[1rem] shadow-[-10px_10px_0_0_var(--background)]" />
           </div>
 
-          {/* Right panel */}
-          <div
-            className="group relative isolate flex h-[280px] w-full cursor-pointer flex-col items-start gap-5 overflow-hidden p-5 md:h-[560px] md:w-1/2 md:items-end md:gap-6 md:p-8 md:transition-[width] hover:md:w-2/3"
-            onClick={() => {
-              console.log("click");
-            }}>
+          <div className="group relative isolate flex h-[280px] w-full cursor-pointer flex-col items-start gap-5 overflow-hidden p-5 md:h-[560px] md:w-1/2 md:items-end md:gap-6 md:p-8 md:transition-[width] hover:md:w-2/3">
             <img
               src={RIGHT_IMAGE}
-              alt="Cristales y energia"
+              alt="Baritas mágicas según numerología"
               className="absolute inset-0 z-0 h-full w-full rounded-b-[20px] object-cover brightness-[0.62] contrast-110 md:rounded-2xl"
             />
             <div
@@ -70,15 +63,15 @@ const Feature149 = ({
               <Button
                 variant="outline"
                 className="rounded-full border-white/20 bg-background/10 text-white hover:bg-background/20">
-                Tienda esotérica
+                Numerología aplicada
               </Button>
-              <h1
+              <h2
                 className="text-left text-3xl font-bold text-white md:text-right md:text-5xl">
-                Cuarzos y más
-              </h1>
+                Baritas mágicas
+              </h2>
               <p className="max-w-md text-left text-white/90 md:text-right">
-                Descubre cuarzos, velas e inciensos para proteger, armonizar y
-                potenciar tu energía todos los días.
+                Baritas seleccionadas de acuerdo con tu numerología para enfocar
+                intención, rituales y manifestación.
               </p>
             </div>
           </div>
@@ -88,4 +81,4 @@ const Feature149 = ({
   );
 };
 
-export { Feature149 };
+export { Feature149B };

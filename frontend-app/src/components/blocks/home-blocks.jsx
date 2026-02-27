@@ -3,6 +3,7 @@ import { Hero55 } from "../hero55";
 import { Hero234 } from "../hero234";
 import { Feature247 } from "../feature247";
 import { Feature149 } from "../feature149";
+import { Feature149B } from "../feature149b";
 import { PromoBanner2 } from "../promo-banner2";
 
 export function HomeBlocks() {
@@ -20,6 +21,7 @@ export function HomeBlocks() {
       <Hero234 />
       <Feature247 />
       <Feature149 />
+      <Feature149B />
     </>
   );
 }
