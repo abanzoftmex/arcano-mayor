@@ -33,16 +33,18 @@ const Feature220a = ({
       <div className="container max-w-5xl">
         {/* Main Content */}
         <div className="mb-16 flex flex-col items-center text-center">
-          <Badge variant="secondary" className="mb-6 px-4 py-2">
+          <Badge
+            variant="secondary"
+            className="mb-6 px-4 py-2 text-lg font-medium tracking-tight text-foreground">
             Escuela espiritual
           </Badge>
           <h2
-            className="mx-auto mb-6 max-w-4xl text-4xl font-semibold tracking-tight md:text-6xl lg:text-7xl">
+            className="mx-auto mb-6 max-w-4xl text-3xl font-semibold text-foreground md:text-4xl lg:text-5xl">
             Cursos para aprender
             <span className="block text-primary">tarot, numerología y más</span>
           </h2>
           <p
-            className="mx-auto mb-8 max-w-2xl text-base text-muted-foreground md:text-lg">
+            className="mx-auto mb-8 max-w-2xl text-center text-base text-muted-foreground md:text-lg">
             Aprende paso a paso con clases prácticas para desarrollar tu
             intuición, interpretar cartas y aplicar herramientas energéticas en
             tu día a día.
