@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import {
   Book,
   Cloud,
@@ -317,7 +317,7 @@ const Navbar11 = ({
     <Fragment>
       <section
         className={cn(
-          "pointer-events-auto fixed top-0 z-[999] flex h-16 w-full items-center justify-center bg-background",
+          "pointer-events-auto fixed top-0 z-[999] flex h-16 w-full items-center justify-center border-b border-border bg-background/95 text-foreground backdrop-blur",
           className
         )}>
         <div className="container">
@@ -344,8 +344,8 @@ const Navbar11 = ({
                   variant={!btn.isPrimary ? "outline" : "default"}
                   className={
                     btn.isPrimary
-                      ? "!text-primary-foreground"
-                      : "text-foreground"
+                      ? "!text-primary-foreground font-medium"
+                      : "text-foreground font-medium"
                   }
                   asChild
                   key={`navbar-btn-${index}`}>
@@ -377,7 +377,7 @@ const DesktopMenuItem = ({
   if (item.groups) {
     return (
       <NavigationMenuItem key={`desktop-menu-item-${index}`} value={`${index}`}>
-        <NavigationMenuTrigger className="h-fit bg-transparent px-2.5 font-normal text-muted-foreground">
+        <NavigationMenuTrigger className="h-fit bg-transparent px-2.5 font-medium text-foreground/80">
           {item.title}
         </NavigationMenuTrigger>
         <NavigationMenuContent className="!rounded-xl !border !p-0">
@@ -385,25 +385,25 @@ const DesktopMenuItem = ({
             {item.groups.map((group, index1) => (
               <li className="flex-1" key={`desktop-group-${index1}`}>
                 <ul>
-                  <li className="px-3 py-2 text-sm leading-normal text-muted-foreground">
+                  <li className="px-3 py-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">
                     {group.title}
                   </li>
                   {group.links.map((link, index2) => (
                     <li key={`desktop-links-${index1}-${index2}`}>
                       <NavigationMenuLink
                         asChild
-                        className="group/link flex-row gap-2 px-3 py-2 transition-colors duration-200">
+                        className="group/link flex items-start gap-2 rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-muted">
                         <a href={link.url}>
                           <div
-                            className="flex size-8 shrink-0 rounded-lg border duration-400 fade-in group-hover/link:bg-background">
-                            <link.icon className="m-auto size-4 group-hover/link:stroke-black" />
+                            className="flex size-8 shrink-0 rounded-lg border border-border bg-background">
+                            <link.icon className="m-auto size-4 text-muted-foreground group-hover/link:text-foreground" />
                           </div>
                           <div className="flex flex-col gap-[2px]">
-                            <div className="text-sm font-medium">
+                            <div className="text-sm font-medium text-foreground">
                               {link.label}
                             </div>
                             <div
-                              className="text-xs text-muted-foreground group-hover/link:text-foreground">
+                              className="text-xs leading-snug text-muted-foreground group-hover/link:text-foreground">
                               {link.description}
                             </div>
                           </div>
@@ -424,7 +424,7 @@ const DesktopMenuItem = ({
     <NavigationMenuItem key={`desktop-menu-item-${index}`} value={`${index}`}>
       <NavigationMenuLink
         href={item.url}
-        className={`${navigationMenuTriggerStyle()} h-fit bg-transparent px-2.5 font-normal text-muted-foreground`}>
+        className={`${navigationMenuTriggerStyle()} h-fit bg-transparent px-2.5 font-medium text-foreground/80`}>
         {item.title}
       </NavigationMenuLink>
     </NavigationMenuItem>
@@ -439,7 +439,7 @@ const MobileNavigationMenu = ({
       <SheetContent
         aria-describedby={undefined}
         side="top"
-        className="dark inset-0 z-[998] h-dvh w-full bg-background pt-[3.9375rem] [&>button]:hidden">
+        className="inset-0 z-[998] h-dvh w-full bg-background pt-[3.9375rem] [&>button]:hidden">
         <div className="h-full overflow-y-auto pt-10 pb-20">
           <div className="container">
             <div
@@ -455,8 +455,8 @@ const MobileNavigationMenu = ({
                     variant={!btn.isPrimary ? "outline" : "default"}
                     className={
                       btn.isPrimary
-                        ? "!text-primary-foreground"
-                        : "text-foreground"
+                        ? "!text-primary-foreground font-medium"
+                        : "text-foreground font-medium"
                     }
                     asChild
                     key={`navbar-btn-${index}`}>
@@ -481,7 +481,7 @@ const renderMobileMenuItem = (item, index) => {
     return (
       <AccordionItem key={item.title} value={`nav-${index}`} className="border-b-0">
         <AccordionTrigger
-          className="h-[3.75rem] items-center p-0 !px-4 text-base leading-[3.75] font-normal text-muted-foreground hover:bg-muted hover:no-underline">
+          className="h-14 items-center !px-4 py-0 text-sm font-medium text-foreground/80 hover:bg-muted hover:no-underline">
           {item.title}
         </AccordionTrigger>
         <AccordionContent className="max-h-[60dvh] overflow-x-auto">
@@ -490,8 +490,8 @@ const renderMobileMenuItem = (item, index) => {
               <a
                 key={`mobile-link-${groupIndex}-${linkIndex}`}
                 href={link.url}
-                className="flex h-12 items-center gap-2 rounded-lg px-4 text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground">
-                <link.icon className="size-4 stroke-muted-foreground" />
+                className="flex h-11 items-center gap-2 rounded-lg px-4 text-sm text-muted-foreground transition-colors duration-300 hover:bg-muted hover:text-foreground">
+                <link.icon className="size-4 text-muted-foreground" />
                 {link.label}
               </a>
             )))}
@@ -504,7 +504,7 @@ const renderMobileMenuItem = (item, index) => {
     <a
       key={item.title}
       href={item.url}
-      className="flex h-[3.75rem] items-center rounded-md p-0 px-4 text-left text-base leading-[3.75] font-normal text-muted-foreground ring-ring/10 outline-ring/50 transition-all hover:bg-muted focus-visible:ring-4 focus-visible:outline-1 nth-last-1:border-0">
+      className="flex h-14 items-center rounded-md px-4 text-left text-sm font-medium text-foreground/80 ring-ring/10 outline-ring/50 transition-all hover:bg-muted focus-visible:ring-4 focus-visible:outline-1 nth-last-1:border-0">
       {item.title}
     </a>
   );
