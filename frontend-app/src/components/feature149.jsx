@@ -24,7 +24,7 @@ const Feature149 = ({
               className="absolute inset-0 z-0 h-full w-full rounded-t-[20px] object-cover brightness-[0.62] contrast-110 md:rounded-2xl"
             />
             <div
-              className="absolute inset-0 z-10 rounded-t-[20px] bg-linear-to-b from-black/80 via-black/72 to-black/62 transition-colors duration-300 md:rounded-2xl group-hover:md:from-black/85 group-hover:md:via-black/78 group-hover:md:to-black/68" />
+              className="absolute inset-0 z-10 rounded-t-[20px] bg-black/65 transition-colors duration-300 md:rounded-2xl group-hover:bg-black/70" />
             <div className="relative z-20 flex flex-col items-start gap-6">
               <Button
                 variant="outline"
@@ -65,7 +65,7 @@ const Feature149 = ({
               className="absolute inset-0 z-0 h-full w-full rounded-b-[20px] object-cover brightness-[0.62] contrast-110 md:rounded-2xl"
             />
             <div
-              className="absolute inset-0 z-10 rounded-b-[20px] bg-linear-to-t from-black/80 via-black/72 to-black/62 transition-colors duration-300 md:rounded-2xl group-hover:md:from-black/85 group-hover:md:via-black/78 group-hover:md:to-black/68" />
+              className="absolute inset-0 z-10 rounded-b-[20px] bg-black/65 transition-colors duration-300 md:rounded-2xl group-hover:bg-black/70" />
             <div className="relative z-20 flex flex-col items-start gap-6 md:items-end">
               <Button
                 variant="outline"
