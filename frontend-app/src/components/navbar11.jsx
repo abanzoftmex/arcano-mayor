@@ -1,26 +1,9 @@
 "use client";
 import {
-  Book,
-  Cloud,
-  Code,
-  Database,
-  Gift,
-  Globe,
-  Heart,
-  Layout,
   MenuIcon,
-  Monitor,
-  Paintbrush,
-  Server,
-  Settings,
-  Shield,
   ShoppingCart,
-  Smartphone,
-  Sparkles,
-  Terminal,
-  Users,
+  User,
   X,
-  Zap,
 } from "lucide-react";
 import { Fragment, useEffect, useState } from "react";
 
@@ -45,238 +28,60 @@ import {
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 
 const LOGO = {
-  url: "https://www.shadcnblocks.com",
+  url: "/",
   title: "LOGO",
 };
 
 const NAVIGATION = [
   {
-    title: "Products",
-    groups: [
-      {
-        title: "Company Blog",
-        links: [
-          {
-            label: "Insights",
-            icon: Book,
-            description: "Company news and updates",
-            url: "#",
-          },
-          {
-            label: "Engineering",
-            icon: Code,
-            description: "Technical deep dives",
-            url: "#",
-          },
-          {
-            label: "Culture",
-            icon: Users,
-            description: "Team stories and values",
-            url: "#",
-          },
-          {
-            label: "Press",
-            icon: Globe,
-            description: "Media mentions",
-            url: "#",
-          },
-        ],
-      },
-      {
-        title: "Developer Tools",
-        links: [
-          {
-            label: "API",
-            icon: Monitor,
-            description: "Access our REST API",
-            url: "#",
-          },
-          {
-            label: "CLI",
-            icon: Terminal,
-            description: "Command line tools",
-            url: "#",
-          },
-          {
-            label: "SDKs",
-            icon: Code,
-            description: "Integrate with our SDKs",
-            url: "#",
-          },
-          {
-            label: "Docs",
-            icon: Book,
-            description: "Complete documentation",
-            url: "#",
-          },
-        ],
-      },
-      {
-        title: "Commerce",
-        links: [
-          {
-            label: "Store",
-            icon: ShoppingCart,
-            description: "Buy our products",
-            url: "#",
-          },
-          {
-            label: "Plans",
-            icon: Database,
-            description: "Subscription options",
-            url: "#",
-          },
-          {
-            label: "Mobile App",
-            icon: Smartphone,
-            description: "Shop on the go",
-            url: "#",
-          },
-          {
-            label: "Gift Cards",
-            icon: Gift,
-            description: "Send a gift instantly",
-            url: "#",
-          },
-        ],
-      },
-    ],
+    title: "INICIO",
+    url: "/",
   },
   {
-    title: "Solutions",
-    groups: [
-      {
-        title: "Industries",
-        links: [
-          {
-            label: "E-commerce",
-            icon: ShoppingCart,
-            description: "Solutions for online stores",
-            url: "#",
-          },
-          {
-            label: "SaaS",
-            icon: Cloud,
-            description: "Tools for SaaS apps",
-            url: "#",
-          },
-          {
-            label: "Finance",
-            icon: Shield,
-            description: "Secure finance apps",
-            url: "#",
-          },
-          {
-            label: "Healthcare",
-            icon: Heart,
-            description: "For medical platforms",
-            url: "#",
-          },
-        ],
-      },
-      {
-        title: "Design System",
-        links: [
-          {
-            label: "Components",
-            icon: Layout,
-            description: "Reusable UI parts",
-            url: "#",
-          },
-          {
-            label: "Tokens",
-            icon: Settings,
-            description: "Design tokens reference",
-            url: "#",
-          },
-          {
-            label: "Icons",
-            icon: Sparkles,
-            description: "Lucide icon library",
-            url: "#",
-          },
-          {
-            label: "Themes",
-            icon: Paintbrush,
-            description: "UI appearance presets",
-            url: "#",
-          },
-        ],
-      },
-    ],
+    title: "SERVICIOS",
+    url: "#servicios",
   },
   {
-    title: "Platform",
-    groups: [
-      {
-        title: "Core Services",
-        links: [
-          {
-            label: "Hosting",
-            icon: Server,
-            description: "Reliable infrastructure",
-            url: "#",
-          },
-          {
-            label: "Auth",
-            icon: Shield,
-            description: "Secure login & roles",
-            url: "#",
-          },
-          {
-            label: "Database",
-            icon: Database,
-            description: "Scalable data storage",
-            url: "#",
-          },
-          {
-            label: "Edge Functions",
-            icon: Zap,
-            description: "Low-latency logic",
-            url: "#",
-          },
-        ],
-      },
-    ],
+    title: "TIENDA",
+    url: "#tienda",
   },
   {
-    title: "Resources",
-    url: "#",
+    title: "CONTACTO",
+    url: "#contacto",
   },
   {
-    title: "Pricing",
-    url: "#",
+    title: "BLOG",
+    url: "#blog",
   },
 ];
 
 const DESKTOP_BUTTONS = [
   {
-    label: "Contact",
+    label: "Carrito",
+    icon: ShoppingCart,
     isPrimary: false,
-    url: "#",
+    url: "#carrito",
   },
   {
-    label: "Log in",
-    isPrimary: false,
-    url: "#",
-  },
-  {
-    label: "Sign up",
+    label: "Mi cuenta",
+    icon: User,
     isPrimary: true,
-    url: "#",
+    url: "#mi-cuenta",
   },
 ];
 
 const MOBILE_BUTTONS = [
   {
-    label: "Sign up",
+    label: "Mi cuenta",
+    icon: User,
     isPrimary: true,
-    url: "#",
+    url: "#mi-cuenta",
   },
   {
-    label: "Log in",
+    label: "Carrito",
+    icon: ShoppingCart,
     isPrimary: false,
-    url: "#",
+    url: "#carrito",
   },
 ];
 
@@ -346,7 +151,10 @@ const Navbar11 = ({
                   }
                   asChild
                   key={`navbar-btn-${index}`}>
-                  <a href={btn.url}>{btn.label}</a>
+                  <a href={btn.url}>
+                    {btn.icon ? <btn.icon className="size-4" /> : null}
+                    {btn.label}
+                  </a>
                 </Button>
               ))}
             </div>
@@ -457,7 +265,10 @@ const MobileNavigationMenu = ({
                     }
                     asChild
                     key={`navbar-btn-${index}`}>
-                    <a href={btn.url}>{btn.label}</a>
+                    <a href={btn.url}>
+                      {btn.icon ? <btn.icon className="size-4" /> : null}
+                      {btn.label}
+                    </a>
                   </Button>
                 ))}
               </div>
