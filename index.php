@@ -18,7 +18,7 @@ get_header();
             echo '<h1 class="section-title">Arcano Astral</h1>';
             echo '<p class="section-copy">Assign a static homepage to use the custom storefront design.</p>';
         }
-        ?> 
+        ?>
     </div>
 </main>
 <?php get_footer(); ?>
