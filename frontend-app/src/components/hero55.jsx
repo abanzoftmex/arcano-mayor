@@ -19,10 +19,9 @@ const Hero55 = ({
             Reserva tu cita en segundos
             <ArrowRight className="h-auto w-4" />
           </a>
-          <h1 className="text-4xl font-semibold lg:text-8xl">Tarot, citas y tienda en un solo lugar</h1>
+          <h1 className="text-4xl font-semibold lg:text-8xl">Descubre tu camino, conecta con tu energía</h1>
           <p className="max-w-2xl text-base text-muted-foreground lg:text-lg">
-            Agenda lecturas personalizadas y compra productos esotericos desde nuestra tienda
-            en WordPress.
+            Reserva lecturas personalizadas y adquiere productos esotéricos desde nuestra tienda en línea.
           </p>
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
             <Button size="lg" asChild>
