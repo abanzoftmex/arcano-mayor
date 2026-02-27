@@ -5,7 +5,9 @@ function arcano_astral_setup() {
 add_action('after_setup_theme', 'arcano_astral_setup');
 
 function arcano_astral_enqueue_styles() {
-    wp_enqueue_style('arcano-astral-style', get_stylesheet_uri(), array(), wp_get_theme()->get('Version'));
+    $style_path = get_stylesheet_directory() . '/style.css';
+    $style_version = file_exists($style_path) ? filemtime($style_path) : wp_get_theme()->get('Version');
+    wp_enqueue_style('arcano-astral-style', get_stylesheet_uri(), array(), $style_version);
 }
 add_action('wp_enqueue_scripts', 'arcano_astral_enqueue_styles');
 
