@@ -21,7 +21,7 @@ const Hero55 = ({
           </a>
           <h1 className="text-4xl font-semibold lg:text-8xl">Descubre tu camino, conecta con tu energía</h1>
           <p className="max-w-2xl text-base text-muted-foreground lg:text-lg">
-            Reserva lecturas personalizadas y adquiere productos esotéricos desde nuestra tienda en línea.
+            Vive una experiencia espiritual integral con asesorías privadas y una tienda especializada en artículos energéticos.
           </p>
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
             <Button size="lg" asChild>
