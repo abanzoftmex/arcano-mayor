@@ -19,7 +19,7 @@ const Hero55 = ({
             Reserva tu cita en segundos
             <ArrowRight className="h-auto w-4" />
           </a>
-          <h1 className="max-w-5xl text-4xl font-semibold md:text-6xl lg:text-8xl">Descubre tu camino, conecta con tu energía</h1>
+          <h1 className="max-w-4xl text-4xl font-semibold md:text-6xl lg:text-7xl">Descubre tu camino, conecta con tu energía</h1>
           <p className="max-w-2xl text-base text-muted-foreground lg:text-lg">
             Vive una experiencia espiritual integral con asesorías privadas y una tienda especializada en artículos energéticos.
           </p>
