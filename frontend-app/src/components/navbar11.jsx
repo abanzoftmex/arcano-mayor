@@ -34,23 +34,23 @@ const LOGO = {
 
 const NAVIGATION = [
   {
-    title: "INICIO",
+    title: "Inicio",
     url: "/",
   },
   {
-    title: "SERVICIOS",
+    title: "Servicios",
     url: "#servicios",
   },
   {
-    title: "TIENDA",
+    title: "Tienda",
     url: "#tienda",
   },
   {
-    title: "CONTACTO",
+    title: "Contacto",
     url: "#contacto",
   },
   {
-    title: "BLOG",
+    title: "Blog",
     url: "#blog",
   },
 ];
