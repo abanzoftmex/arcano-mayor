@@ -4,7 +4,6 @@ import React from "react";
 import { useRef } from "react";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 
 const Feature247 = () => {
   return (
@@ -12,10 +11,9 @@ const Feature247 = () => {
       <div className="container flex flex-col items-center justify-center">
         <div className="flex w-full">
           <TextReveal
-            title="Servicios y tienda espiritual"
-            className="items-start justify-start text-left">
-            Explora todo lo que tenemos para ti: lectura de tarot, cuarzos, carta astral,
-            numerologia, cursos y muchos servicios mas para acompanar tu proceso.
+            title="Elige una forma de conocer tu futuro"
+            className="items-center justify-center text-center">
+            Tarot, carta astral, numerologia, cursos y mas servicios para guiar tu camino.
           </TextReveal>
         </div>
       </div>
@@ -41,15 +39,15 @@ const TextReveal = ({
     <div ref={targetRef} className={cn("relative z-0 h-[120vh] w-full", className)}>
       <div
         className="sticky top-20 mx-auto flex h-auto items-center bg-transparent px-4 py-10">
-        <div className="flex w-full flex-col gap-8 md:flex-row md:items-center md:justify-between">
+        <div className="flex w-full flex-col items-center justify-center gap-6">
           <div ref={targetRef} className="flex flex-col justify-center">
           <span
-            className="text-left text-lg font-medium tracking-tight text-foreground">
+            className="text-center text-lg font-medium tracking-tight text-foreground">
             {title}
           </span>
           <span
             className={cn(
-              "flex flex-wrap p-4 text-xl font-semibold text-black/20 dark:text-white/20",
+              "flex flex-wrap justify-center p-4 text-3xl font-semibold text-black/20 md:text-4xl lg:text-5xl dark:text-white/20",
               className
             )}>
             {words.map((word, i) => {
@@ -62,11 +60,6 @@ const TextReveal = ({
               );
             })}
           </span>
-          </div>
-          <div className="md:pr-8">
-            <Button size="lg" asChild>
-              <a href="#tienda">Ver tienda</a>
-            </Button>
           </div>
         </div>
       </div>
