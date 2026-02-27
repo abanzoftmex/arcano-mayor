@@ -10,7 +10,7 @@ const Feature247 = () => {
   return (
     <section className="pb-32">
       <div className="container flex flex-col items-center justify-center">
-        <div className="flex max-w-4xl">
+        <div className="flex w-full">
           <TextReveal
             title="Servicios y tienda espiritual"
             className="items-start justify-start text-left">
@@ -29,7 +29,6 @@ const TextReveal = ({
   children,
   title,
   className,
-  maxWidth,
 }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -39,10 +38,7 @@ const TextReveal = ({
   const words = children.split(" ");
 
   return (
-    <div
-      ref={targetRef}
-      className={cn("relative z-0 h-[200vh]", className)}
-      style={{ maxWidth: maxWidth || "56rem" }}>
+    <div ref={targetRef} className={cn("relative z-0 h-[200vh] w-full", className)}>
       <div
         className="sticky top-0 mx-auto flex h-[50%] items-center bg-transparent px-[1rem] py-[5rem]">
         <div className="flex w-full flex-col gap-8 md:flex-row md:items-center md:justify-between">
@@ -53,7 +49,7 @@ const TextReveal = ({
           </span>
           <span
             className={cn(
-              "flex flex-wrap p-5 text-2xl font-semibold text-black/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl dark:text-white/20",
+              "flex flex-wrap p-5 text-xl font-semibold text-black/20 md:p-8 md:text-2xl lg:p-10 lg:text-3xl xl:text-4xl dark:text-white/20",
               className
             )}>
             {words.map((word, i) => {
