@@ -34,13 +34,23 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #faf9f5 !important;
+  background-image: none !important;
 }
 
 body {
   font-family: "DM Sans", sans-serif;
   color: var(--foreground);
-  background: var(--background);
+  background: #faf9f5 !important;
+  background-image: none !important;
   line-height: 1.6;
+}
+
+body::before,
+body::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
 }
 
 a {

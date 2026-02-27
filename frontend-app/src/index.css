@@ -26,6 +26,7 @@
 #arcano-frontend-app {
   font-family: "DM Sans", sans-serif;
   color: hsl(var(--ui-foreground));
+  background: hsl(var(--ui-background));
   line-height: 1.5;
 }
 
