@@ -38,9 +38,9 @@ const TextReveal = ({
   const words = children.split(" ");
 
   return (
-    <div ref={targetRef} className={cn("relative z-0 h-[200vh] w-full", className)}>
+    <div ref={targetRef} className={cn("relative z-0 h-[120vh] w-full", className)}>
       <div
-        className="sticky top-0 mx-auto flex h-[50%] items-center bg-transparent px-[1rem] py-[5rem]">
+        className="sticky top-20 mx-auto flex h-auto items-center bg-transparent px-4 py-10">
         <div className="flex w-full flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div ref={targetRef} className="flex flex-col justify-center">
           <span
@@ -49,7 +49,7 @@ const TextReveal = ({
           </span>
           <span
             className={cn(
-              "flex flex-wrap p-5 text-xl font-semibold text-black/20 md:p-8 md:text-2xl lg:p-10 lg:text-3xl xl:text-4xl dark:text-white/20",
+              "flex flex-wrap p-4 text-xl font-semibold text-black/20 dark:text-white/20",
               className
             )}>
             {words.map((word, i) => {
