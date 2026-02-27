@@ -317,7 +317,7 @@ const Navbar11 = ({
     <Fragment>
       <section
         className={cn(
-          "pointer-events-auto fixed top-0 z-999 flex h-16 w-full items-center justify-center bg-background",
+          "pointer-events-auto fixed top-0 z-[999] flex h-16 w-full items-center justify-center bg-background",
           className
         )}>
         <div className="container">
@@ -439,7 +439,7 @@ const MobileNavigationMenu = ({
       <SheetContent
         aria-describedby={undefined}
         side="top"
-        className="dark inset-0 z-998 h-dvh w-full bg-background pt-[3.9375rem] [&>button]:hidden">
+        className="dark inset-0 z-[998] h-dvh w-full bg-background pt-[3.9375rem] [&>button]:hidden">
         <div className="h-full overflow-y-auto pt-10 pb-20">
           <div className="container">
             <div

@@ -7,6 +7,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<?php if (!(is_front_page() && function_exists('arcano_has_react_home_assets') && arcano_has_react_home_assets())) : ?>
 <header class="site-header">
     <div class="arcano-container site-header__inner">
         <a href="<?php echo esc_url(home_url('/')); ?>" class="brand-mark">
@@ -21,3 +22,4 @@
         <a href="#catalogo" class="shop-pill">Ver bloques</a>
     </div>
 </header>
+<?php endif; ?>
