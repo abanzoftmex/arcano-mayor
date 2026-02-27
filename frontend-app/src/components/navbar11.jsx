@@ -46,7 +46,7 @@ import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 
 const LOGO = {
   url: "https://www.shadcnblocks.com",
-  title: "Shadcnblocks.com",
+  title: "LOGO",
 };
 
 const NAVIGATION = [
@@ -323,9 +323,8 @@ const Navbar11 = ({
             <div className="flex items-center gap-8">
               <a
                 href={LOGO.url}
-                className="flex max-h-8 items-center gap-2 text-sm font-medium tracking-normal">
-                <span className="hidden md:inline-block">{LOGO.title}</span>
-                <span className="md:hidden">{LOGO.title}</span>
+                className="flex items-center text-2xl font-semibold leading-none tracking-wide">
+                <span>{LOGO.title}</span>
               </a>
               <NavigationMenu className="hidden xl:flex" viewport={false}>
                 <NavigationMenuList>
