@@ -8,16 +8,16 @@ import { Button } from "@/components/ui/button";
 
 const stats = [
   {
-    number: "52%",
-    text: "boost in user retention",
+    number: "12+",
+    text: "cursos activos en la plataforma",
   },
   {
-    number: "40%",
-    text: "decrease in development time",
+    number: "350+",
+    text: "alumnos formados en la comunidad",
   },
   {
-    number: "2.5x",
-    text: "increase in feature adoption",
+    number: "4.8/5",
+    text: "valoración promedio de los cursos",
   },
 ];
 
@@ -34,20 +34,21 @@ const Feature220a = ({
         {/* Main Content */}
         <div className="mb-16 text-center">
           <Badge variant="secondary" className="mb-6 px-4 py-2">
-            ⚡ Supercharge Your Workflow
+            🎓 Escuela espiritual
           </Badge>
           <h2
             className="leading-tighter mb-6 text-5xl font-semibold tracking-tight lg:text-6xl">
-            Ship Beautiful UIs
-            <span className="block text-primary">In Record Time</span>
+            Cursos para aprender
+            <span className="block text-primary">tarot, numerología y más</span>
           </h2>
           <p
             className="mx-auto mb-8 max-w-3xl text-xl leading-relaxed font-medium text-muted-foreground">
-            Transform your development process with pre-built components that
-            adapt to your design system and accelerate your time-to-market.
+            Aprende paso a paso con clases prácticas para desarrollar tu
+            intuición, interpretar cartas y aplicar herramientas energéticas en
+            tu día a día.
           </p>
           <Button size="lg" className="px-8 py-6 text-lg">
-            Start Building
+            Ver cursos
             <ArrowRight />
           </Button>
         </div>
