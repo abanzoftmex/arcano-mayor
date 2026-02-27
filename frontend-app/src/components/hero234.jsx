@@ -27,8 +27,8 @@ const Hero234 = ({
 }) => {
   return (
     <section
-      className={cn("relative min-h-screen overflow-hidden bg-background", className)}>
-      <div className="absolute inset-0 flex flex-col justify-center gap-4">
+      className={cn("relative h-[68vh] min-h-[460px] overflow-hidden bg-background md:h-[76vh] lg:h-[82vh]", className)}>
+      <div className="absolute inset-0 flex flex-col justify-center gap-3 md:gap-4">
         {galleryImages.map((row, rowIndex) => (
           <motion.div
             key={rowIndex}
@@ -46,8 +46,8 @@ const Hero234 = ({
                 key={`${rowIndex}-${imageIndex}`}
                 className="relative flex-shrink-0 overflow-hidden rounded-lg"
                 style={{
-                  width: rowIndex === 1 ? "280px" : "240px",
-                  height: rowIndex === 1 ? "350px" : "300px",
+                  width: rowIndex === 1 ? "260px" : "220px",
+                  height: rowIndex === 1 ? "320px" : "280px",
                 }}
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}>
